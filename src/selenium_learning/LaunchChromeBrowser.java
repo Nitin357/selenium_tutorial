@@ -10,7 +10,7 @@ public class LaunchChromeBrowser {
         //chromdriver.exe
         //selenium jar files
 
-        System.setProperty("webdriver.chrome.driver", "D:\\selenium_tutorial\\drivers\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
 
         WebDriver driver =new ChromeDriver();
         driver.get("https://www.google.com/");
