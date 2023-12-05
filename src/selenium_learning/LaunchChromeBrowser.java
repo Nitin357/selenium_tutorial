@@ -16,9 +16,6 @@ public class LaunchChromeBrowser {
         driver.get("https://www.google.com/");
 
         Thread.sleep(10000);
-
-
-
         driver.close();
 
 
