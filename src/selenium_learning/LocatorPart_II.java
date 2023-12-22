@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.concurrent.TimeUnit;
 
-public class LocatorsPart_I {
+public class LocatorPart_II {
 
     public static void main(String[] args) throws InterruptedException {
         System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
@@ -22,7 +22,7 @@ public class LocatorsPart_I {
 
 
         //id
-        String acceptButton ="igdpr-button";
+        String acceptButton = "igdpr-button";
         WebElement accept_button = driver.findElement(By.id(acceptButton));
         accept_button.click();
 
@@ -39,12 +39,24 @@ public class LocatorsPart_I {
         keword_text.sendKeys("Peneer");
 
 
+/*
+        //linktext
+        String teamboing = "#TeamBoeing";
+        WebElement temaboing_link = driver.findElement(By.linkText(teamboing));
+        temaboing_link.click();
+
+ */
+        //partiallinktext
+        String teamboing = "#TeamB";
+        WebElement temaboing_link = driver.findElement(By.partialLinkText(teamboing));
+        temaboing_link.click();
 
 
-        Thread.sleep(5000);
-        driver.close();
+
 
 
 
     }
+
+
 }
